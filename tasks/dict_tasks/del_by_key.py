@@ -28,7 +28,7 @@ users = {
 
 
 def del_user(users_dict: dict, login: Any) -> dict:
-    users_dict.clear()
+    del users_dict[login]
     return login
 
 
